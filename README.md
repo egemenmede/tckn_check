@@ -26,4 +26,10 @@ Flutter için TCKN (TC Kimlik No) kontrolü yapan package projesi.
 
 ## Kullanımı
 
-TODO: ...
+pubspec.yaml içerisine aşağıdaki şekilde ekleyin.
+
+```xml
+dependencies:
+  tckn_check:
+    git: https://github.com/egemenmede/tckn_check.git
+```
