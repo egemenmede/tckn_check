@@ -11,15 +11,13 @@ library tckn_check;
     İşlem: 1. 2. 3. 4. 5. 6. 7. 8. 9. ve 10. hanelerin toplamından elde edilen sonucun 10′a bölümünden (Mod 10) kalan, bize 11. haneyi verir.
 */
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+/// TCKN Checker Package
+class Tckn {
 
-  final int chkCount = 10;
-  final int chrCount = 11;
+  final int _chkCount = 10;
+  final int _chrCount = 11;
 
-  bool checkTCKN(String value) {
+  bool check(String value) {
     bool returnStatus = true;
 
     // Kural-1: Tüm karakterleri rakam olmalıdır.
@@ -69,7 +67,7 @@ class Calculator {
   // UTILITY: TCKN Algoritmasına göre ilk 10 rakamın toplamını int olarak geri döndürür.
   int getTopTenTotal(List tcknCharList){
     int total = 0;
-    for (int i = 0; i < chkCount; i++) {
+    for (int i = 0; i < _chkCount; i++) {
       total += int.parse(tcknCharList[i].toString());
     }
     return total;
@@ -94,17 +92,17 @@ class Calculator {
   // Kural-4 Kontrol Metodu
   bool getRuleFourStatus(String val){
     var tcknCharList = getTcknCharList(val);
-    if (tcknCharList.length < chkCount) return false;
+    if (tcknCharList.length < _chkCount) return false;
 
-    return getFirstNineTotal(tcknCharList) == tcknCharList[chkCount-1];
+    return getFirstNineTotal(tcknCharList) == tcknCharList[_chkCount-1];
   }
 
   // Kural-5 Kontrol Metodu
   bool getRuleFiveStatus(String val){
     List tcknCharList = getTcknCharList(val);
-    if (tcknCharList.length != chrCount) return false;
+    if (tcknCharList.length != _chrCount) return false;
 
-    return (tcknCharList[chkCount]).toString() == (getTopTenTotal(tcknCharList) % 10).toString();
+    return (tcknCharList[_chkCount]).toString() == (getTopTenTotal(tcknCharList) % 10).toString();
   }
 
 }
