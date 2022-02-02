@@ -50,7 +50,7 @@ class Tckn {
       print("Kural-5: "+ returnStatus.toString());
     }
 
-    print("Kurallar SON: "+ returnStatus.toString());
+    print("Tüm Kurallar Kontrol: "+ returnStatus.toString());
 
     return returnStatus;
   }
