@@ -1,7 +1,6 @@
 name: tckn_check
 description: TCKN Check Flutter Package Project.
 version: 0.0.1
-author: Egemen Mede<egemenmede@gmail.com>
 homepage: https://github.com/egemenmede/tckn_check.git
 
 environment:
