@@ -15,7 +15,7 @@ void main() {
 
   test('geçersiz tckn: kural-2 ihlali', () {
     final tckn = Tckn();
-    expect(tckn.check("2468678658"), false);
+    expect(tckn.check("6468678658"), false);
   });
 
   test('geçersiz tckn: kural-4 ihlali', () {
