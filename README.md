@@ -30,6 +30,5 @@ pubspec.yaml içerisine aşağıdaki şekilde ekleyin.
 
 ```xml
 dependencies:
-  tckn_check:
-    git: https://github.com/egemenmede/tckn_check.git
+  tckn_check: ^0.0.1
 ```
