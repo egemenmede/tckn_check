@@ -32,3 +32,7 @@ pubspec.yaml içerisine aşağıdaki şekilde ekleyin.
 dependencies:
   tckn_check: ^0.0.1
 ```
+
+## pub.dev
+
+- [tckn_check](https://pub.dev/packages/tckn_check)
