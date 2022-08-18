@@ -19,28 +19,35 @@ class Tckn {
   bool check(String value) {
     bool returnStatus = true;
 
-    /// Kural-1: Tüm karakterleri rakam olmalıdır.
-    if (value.contains(RegExp(r'[A-Z,a-z,ü,Ü,ö,Ö,ğ,Ğ,i,İ,ç,Ç,ş,Ş]'))) {
+    // isEmpty Check
+    if (value.isEmpty) {
       returnStatus = false;
     } else {
-      ///Kural-2: TC Kimlik numarası 11 basamaktan oluşmalıdır.
-      if (value.toString().length != 11) {
+      /// Kural-1: Tüm karakterleri rakam olmalıdır.
+      if (value.contains(RegExp(r'[A-Z,a-z,ü,Ü,ö,Ö,ğ,Ğ,i,İ,ç,Ç,ş,Ş]'))) {
         returnStatus = false;
-      }
+      } else {
+        ///Kural-2: TC Kimlik numarası 11 basamaktan oluşmalıdır.
+        if (value
+            .toString()
+            .length != 11) {
+          returnStatus = false;
+        }
 
-      /// Kural-3: İlk hanesi 0 olamaz.
-      if (value.toString().substring(0, 1) == "0") {
-        returnStatus = false;
-      }
+        /// Kural-3: İlk hanesi 0 olamaz.
+        if (value.toString().substring(0, 1) == "0") {
+          returnStatus = false;
+        }
 
-      /// Kural-4: İlk 9 basamak arasındaki algoritma, 10. basamağı vermelidir.
-      if (getRuleFourStatus(value) == false) {
-        returnStatus = false;
-      }
+        /// Kural-4: İlk 9 basamak arasındaki algoritma, 10. basamağı vermelidir.
+        if (getRuleFourStatus(value) == false) {
+          returnStatus = false;
+        }
 
-      /// Kural-5: İlk 10 basamak arasındaki algoritma, 11. basamağı vermelidir.
-      if (getRuleFiveStatus(value) == false) {
-        returnStatus = false;
+        /// Kural-5: İlk 10 basamak arasındaki algoritma, 11. basamağı vermelidir.
+        if (getRuleFiveStatus(value) == false) {
+          returnStatus = false;
+        }
       }
     }
 
