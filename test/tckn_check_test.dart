@@ -3,6 +3,16 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:tckn_check/tckn_check.dart';
 
 void main() {
+  test('empty kontrolu', () {
+    final tckn = Tckn();
+    expect(tckn.check(""), false);
+  });
+
+  test('bosluk kontrolu 2', () {
+    final tckn = Tckn();
+    expect(tckn.check(" "), false);
+  });
+
   test('geçerli tckn bilgisinin girilmesi', () {
     final tckn = Tckn();
     expect(tckn.check("62468678658"), true);
