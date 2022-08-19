@@ -1,3 +1,7 @@
+## 0.0.3
+
+* Format check düzeltmesi.
+
 ## 0.0.2
 
 * isEmpty kontrolünün eklenmesi.
