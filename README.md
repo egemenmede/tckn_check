@@ -30,7 +30,7 @@ pubspec.yaml içerisine aşağıdaki şekilde ekleyin.
 
 ```xml
 dependencies:
-  tckn_check: ^0.0.3
+  tckn_check: ^0.0.4
 ```
 
 ## pub.dev

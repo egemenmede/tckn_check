@@ -1,3 +1,7 @@
+## 0.0.4
+
+* Readme güncelleme.
+
 ## 0.0.3
 
 * Format check düzeltmesi.
