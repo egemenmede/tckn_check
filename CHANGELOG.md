@@ -1,3 +1,7 @@
+## 0.0.2
+
+* isEmpty kontrolünün eklenmesi.
+
 ## 0.0.1
 
 * TCKN Check kütüphanesi, ilk versiyonunun yayınlanması.

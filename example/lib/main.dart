@@ -67,32 +67,29 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: Wrap( //will break to another line on overflow
+      floatingActionButton: Wrap(
+        //will break to another line on overflow
         direction: Axis.horizontal, //use vertical to show  on vertical axis
         children: [
           Container(
-              margin:const EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: FloatingActionButton(
                 onPressed: _trueTckn,
                 tooltip: 'Example',
                 child: const Icon(Icons.check),
                 backgroundColor: Colors.green,
-              )
-          ), //button first
+              )), //button first
 
           Container(
-              margin:const EdgeInsets.all(10),
+              margin: const EdgeInsets.all(10),
               child: FloatingActionButton(
                 onPressed: _falseTckn,
                 tooltip: 'Example',
                 child: const Icon(Icons.error),
                 backgroundColor: Colors.red,
-              )
-          ), // button second
+              )), // button second
         ],
       ),
-
-
     );
   }
 }

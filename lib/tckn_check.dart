@@ -28,9 +28,7 @@ class Tckn {
         returnStatus = false;
       } else {
         ///Kural-2: TC Kimlik numarası 11 basamaktan oluşmalıdır.
-        if (value
-            .toString()
-            .length != 11) {
+        if (value.toString().length != 11) {
           returnStatus = false;
         }
 
