@@ -11,7 +11,10 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
+# README
+
 ## tckn_check
+
 Flutter için TCKN (TC Kimlik No) kontrolü yapan package projesi.
 
 ## TC Kimlik No Doğrulama Algoritması
@@ -30,7 +33,7 @@ pubspec.yaml içerisine aşağıdaki şekilde ekleyin.
 
 ```xml
 dependencies:
-  tckn_check: ^0.0.4
+  tckn_check: ^1.0.0
 ```
 
 ## pub.dev

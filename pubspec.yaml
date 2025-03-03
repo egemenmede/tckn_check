@@ -1,10 +1,11 @@
 name: tckn_check
 description: TCKN Check Flutter Package Project. With this library, you can check if your TCKN numbers are valid. The library checks all the necessary requirements for you.
-version: 0.0.4
-homepage: https://github.com/egemenmede/tckn_check.git
+version: 1.0.0
+homepage: https://github.com/egemenmede
+repository: https://github.com/egemenmede/tckn_check
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.12.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:

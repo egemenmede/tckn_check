@@ -1,3 +1,9 @@
+# CHANGELOG
+
+## 1.0.0
+
+* Güncel paket updateleri yapıldı, ana versiyon yayınlandı.
+
 ## 0.0.4
 
 * Readme güncelleme.
